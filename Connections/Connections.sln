@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connections", "Connections.csproj", "{CA68BCB7-C2A7-42E2-8FB1-1EDFC759BD7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connections.Test", "..\Connections.Test\Connections.Test.csproj", "{943F140B-2DF2-43BF-8ED2-3154C8239A31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA68BCB7-C2A7-42E2-8FB1-1EDFC759BD7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA68BCB7-C2A7-42E2-8FB1-1EDFC759BD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA68BCB7-C2A7-42E2-8FB1-1EDFC759BD7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA68BCB7-C2A7-42E2-8FB1-1EDFC759BD7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943F140B-2DF2-43BF-8ED2-3154C8239A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943F140B-2DF2-43BF-8ED2-3154C8239A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943F140B-2DF2-43BF-8ED2-3154C8239A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943F140B-2DF2-43BF-8ED2-3154C8239A31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A3225CB-1D37-42DE-8763-97FD5C82A38B}
+	EndGlobalSection
+EndGlobal
