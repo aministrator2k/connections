@@ -6,7 +6,8 @@ namespace Connections.Termination;
 class RowTerminationRule : ITerminationRule
 {
     private readonly int _lineLength;
-    private readonly LineFinder _lineFinder = new (); // We new it here because it is an internal implementation and not a dependency
+    // We new it here because it is an internal implementation and not a dependency
+    private readonly LineFinder _lineFinder = new (); 
 
     public RowTerminationRule(int lineLength)
     {

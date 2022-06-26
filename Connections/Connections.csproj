@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Gameplay\" />
-    <Folder Include="Termination\" />
     <Folder Include="Players\" />
   </ItemGroup>
 
