@@ -5,7 +5,7 @@ namespace Connections.Gameplay;
 public class SimpleTurnSelector : ITurnSelector
 {
     private readonly Player[] _players;
-    private int _counter = 0;
+    private int _counter;
 
     // This could be a PlayerRepository instead
     public SimpleTurnSelector(Player[] players)

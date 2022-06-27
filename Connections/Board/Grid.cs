@@ -14,9 +14,9 @@ public class Grid
 
     public Grid Initialize()
     {
-        for (int i = 0; i < _boxes.GetLength(0); i++)
-            for (int j = 0; j < _boxes.GetLength(1); j++)
-                _boxes[i, j] = new Box();
+        for (var i = 0; i < _boxes.GetLength(0); i++)
+        for (var j = 0; j < _boxes.GetLength(1); j++)
+            _boxes[i, j] = new Box();
 
         return this;
     }
@@ -27,12 +27,7 @@ public class Grid
         _boxes[location.X, location.Y].Player = player;
     }
 
-    public Player Get(Point location)
-    {
-        return Get(location.X, location.Y);
-    }
-
-    public Player Get(int x, int y)
+    public Player? Get(int x, int y)
     {
         return _boxes[x, y].Player;
     }

@@ -1,20 +1,21 @@
 ﻿using Connections.Board;
 using Connections.Players;
+using Connections.Termination.Validator;
 
-namespace Connections.Termination;
+namespace Connections.Termination.Rules;
 
-class RowTerminationRule : ITerminationRule
+internal class RowTerminationRule : ITerminationRule
 {
-    private readonly int _lineLength;
     // We new it here because it is an internal implementation and not a dependency
-    private readonly LineFinder _lineFinder = new (); 
+    private readonly LineFinder _lineFinder = new();
+    private readonly int _lineLength;
 
     public RowTerminationRule(int lineLength)
     {
         _lineLength = lineLength;
     }
 
-    public Player? Find(Grid board)
+    public TerminationResult Assess(Grid board)
     {
         return _lineFinder.Find(board, new NavigationParameters
         {

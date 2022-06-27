@@ -2,7 +2,7 @@
 
 namespace Connections.UserInterface;
 
-public class GameInputPrompt : IGameInputPrompt
+public class ConsoleGameInputPrompt : IGameInputPrompt
 {
     public Size GetBoardSize()
     {
@@ -12,6 +12,6 @@ public class GameInputPrompt : IGameInputPrompt
         Console.WriteLine("Enter board size, Y:");
         string y = Console.ReadLine();
 
-        return new  Size(int.Parse(x), int.Parse(y));
+        return new Size(int.Parse(x), int.Parse(y));
     }
 }
